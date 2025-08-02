@@ -1,5 +1,7 @@
-from flask import flask
+from flask import Flask
+
 app = Flask(__name__)
+
 @app.route("/info")
 def lwinfo():
      return "i am LW from India"
