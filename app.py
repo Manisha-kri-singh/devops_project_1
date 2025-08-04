@@ -1,13 +1,14 @@
 from flask import Flask
 
-app = Flask(__name__)
+app = Flask(_name_)
 
 @app.route("/info")
 def lwinfo():
-     return "i am LW from India"
+    return "I am LW from India"
 
 @app.route("/phone")
-
 def lwphone():
     return "910000000000"
-app.route(host="0.0.0.0")
+
+if _name_ == "_main_":
+    app.run(host="0.0.0.0", port=5000)
